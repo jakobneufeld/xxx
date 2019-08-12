@@ -21,6 +21,11 @@ public enum PapaAction {
     case none
 }
 public struct Papa {
+    public init(name: String, coname: String, delegate: PapaDelegate?) {
+        self.name = name
+        self.coname = coname
+        self.delegate = delegate
+    }
     var name: String
     var coname: String
     var delegate: PapaDelegate?
